@@ -3,6 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbare Afbeelding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        .scrollable-image {
+            display: block;
+            min-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mijn Pagina met Grote Afbeelding</h1>
+        <p>Deze afbeelding kan horizontaal gescrolled worden op kleine schermen:</p>
+        
+        <div class="image-container">
+            <img src="grote-afbeelding.jpg" alt="Grote afbeelding" class="scrollable-image">
+        </div>
+        
+        <p>Andere inhoud van de pagina blijft responsive.</p>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nederlandse Pagina</title>
     <style>
         * {
